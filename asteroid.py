@@ -16,4 +16,5 @@ class Asteroid(CircleShape):
         #forward = pygame.Vector2(0, 1)
         self.position += self.velocity * dt
 
-        
+    def split(self):
+        self.kill()
